@@ -47,13 +47,14 @@ public class MainActivity extends AppCompatActivity {
            public void onResponse(String response) {
                Toast.makeText(getApplicationContext(), "Response:" + response.toString(), Toast.LENGTH_LONG).show();
 
-           }, new Response.ErrorListener() {
+           }
+           },new Response.ErrorListener() {
                @Override
                 public void onErrorResponse(VolleyError error) {
                    Log.i(TAG, "Error :" + error.toString());
                 }
             }
-        });
+        );
 
     }
 
